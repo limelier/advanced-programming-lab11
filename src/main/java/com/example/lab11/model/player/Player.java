@@ -9,10 +9,7 @@ public class Player {
     @Indexed(unique = true)
     private String name;
 
-    public Player(String name) {
-        Assert.hasText(name, "The name cannot be null or empty.");
-        this.name = name;
-    }
+    public Player() {}
 
     public String getName() {
         return name;

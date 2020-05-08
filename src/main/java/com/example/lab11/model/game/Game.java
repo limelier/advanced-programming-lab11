@@ -15,6 +15,8 @@ public class Game {
     private List<Move> moveList;
     private Player winner;
 
+    public Game() {}
+
     public Game(Player host, Player guest, int[][] endState, List<Move> moveList, Player winner) {
         Assert.notNull(host, "The host cannot be null.");
         Assert.notNull(guest, "The guest cannot be null.");
